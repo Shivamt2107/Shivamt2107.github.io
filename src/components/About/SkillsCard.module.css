@@ -1,0 +1,44 @@
+.skillCard {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 5px 5px 10px var(--light-4);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  background-color: var(--light);
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 8px 0px;
+}
+
+.card_image img {
+  overflow: hidden;
+  height: auto;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  .skillCard {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .card_image img {
+    height: 35px;
+  }
+
+  .card {
+    border-radius: 10px;
+    padding: 1px;
+    margin: 1px;
+  }
+}

@@ -1,0 +1,56 @@
+.container {
+  flex: 0.5 1;
+  /* border: 1px solid black; */
+}
+
+.timeline_icon {
+  background: var(--cinder-light);
+  color: var(--light-2);
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.timeline_start {
+  height: 3rem;
+  border-left: 2px solid var(--light-4);
+  margin-left: 1rem;
+}
+
+.timeline {
+  padding-left: 1rem;
+  text-align: start;
+}
+
+.timeline_item {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 0;
+  color: var(--cinder);
+
+  /* border-left: 2px solid gainsboro; */
+}
+
+.timeline_item:not(:last-child) {
+  border-left: 2px solid var(--light-4);
+}
+
+.timeline_title {
+  font-size: 1.2rem;
+  margin-top: -0.5rem;
+  position: relative;
+}
+
+.timeline_title::after {
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--purple);
+}

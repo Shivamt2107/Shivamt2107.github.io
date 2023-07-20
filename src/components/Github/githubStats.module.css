@@ -1,0 +1,266 @@
+.Github_section {
+  height: auto;
+  padding: 0px 60px;
+  /* border: 1px solid black; */
+  border-bottom: 2px solid var(--light-2);
+}
+
+.container {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.heading {
+  padding: 90px 0px 40px;
+}
+
+.Github_section {
+  padding: 0px 60px;
+}
+
+/* .above-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    position: relative;
+    color: var(--cinder-light);
+    display: inline-block;
+  }
+  
+  .above-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 2px;
+    background: var(--light-4);
+  } */
+
+.Github_section .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--cinder);
+  /* border: 1px solid black; */
+  word-spacing: 10px
+}
+
+
+.stats_container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.stats_container>img {
+  max-width: 100%;
+  width: 100%;
+  height: 208px;
+  /* border: 1px solid black; */
+  margin: 0px auto;
+}
+
+
+
+.githubInfo {
+  display: flex;
+  justify-content: space-around;
+  gap: 0px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+.texts {
+  color: var(--cinder);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.5s linear;
+}
+
+.texts h1 {
+  margin-left: 9px;
+  font-size: 23px;
+}
+
+.texts:hover {
+  color: var(--purple);
+  transform: scale(1.05);
+  transition: 0.4s ease-in;
+}
+
+.githubCalender {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
+.githubCalender>img {
+  /* border: 2px solid teal; */
+  height: 380px;
+  width: 100%;
+}
+
+
+
+
+.GitShivam_Stat {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+
+.box {
+  transition: transform 0.5s linear;
+}
+
+.box:hover {
+  /* color:  #dc143c; */
+  transform: scale(1.1);
+
+  transition: 0.5s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  .Github_section {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+
+
+  .Github_section {
+    height: auto;
+    padding: 0px 20px;
+    /* border: 1px solid black; */
+    border-bottom: 2px solid var(--light-2);
+  }
+
+
+  .heading {
+    padding: 40px 0px 20px;
+    /* border: 1px solid black; */
+  }
+
+
+
+  .Github_section .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--cinder);
+    /* border: 1px solid black; */
+    word-spacing: 10px
+  }
+
+
+  .stats_container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+
+  .stats_container>img {
+    max-width: 100%;
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+  }
+
+
+
+  .githubInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .texts {
+    color: var(--cinder);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: transform 0.5s linear;
+    /* border: 1px solid black; */
+  }
+
+  .texts h1 {
+    margin-left: 5px;
+    font-size: 18px;
+    /* border: 1px solid black; */
+  }
+
+  .texts:hover {
+    color: var(--purple);
+    transform: scale(1.05);
+    transition: 0.4s ease-in;
+  }
+
+  .githubCalender {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+
+  .githubCalender>img {
+    /* border: 2px solid teal; */
+    height: 380px;
+    width: 100%;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 425px) {
+  .Github_section {
+    display: none;
+  }
+  .GitShivam_Stat{
+    display: none;
+
+  }
+
+}
